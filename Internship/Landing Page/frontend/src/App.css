@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.roundborder {
+ @apply rounded-xl border border-gray-700;
+}
