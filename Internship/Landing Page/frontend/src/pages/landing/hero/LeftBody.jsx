@@ -4,7 +4,6 @@ const LeftBody = () => {
   return (
     <div className="w-1/2 flex items-center justify-center px-12">
       <div className="max-w-md">
-
         {/* Heading */}
         <h1 className="text-6xl font-bold text-slate-900 leading-tight">
           Get paid early
@@ -20,8 +19,8 @@ const LeftBody = () => {
 
         {/* Description */}
         <p className="text-gray-500 mt-8 leading-7">
-          Supports small businesses with simple invoicing,
-          powerful integrations, and cash flow management tools.
+          Supports small businesses with simple invoicing, powerful
+          integrations, and cash flow management tools.
         </p>
 
         {/* Input & Button */}
@@ -43,7 +42,6 @@ const LeftBody = () => {
           <span>coinbase</span>
           <span>instacart</span>
         </div>
-
       </div>
     </div>
   );

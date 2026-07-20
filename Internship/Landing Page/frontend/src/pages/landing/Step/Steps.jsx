@@ -1,25 +1,8 @@
 import React from "react";
 import StepCard from "./StepCard";
+import { steps } from "./mock";
 
 const Steps = () => {
-  const steps = [
-    {
-      number: "1",
-      title: "Open your account",
-      desc: "Sign up to Finpay and set up your account from the dashboard.",
-    },
-    {
-      number: "2",
-      title: "Transfer your money",
-      desc: "Move money from another account into yours and start earning up.",
-    },
-    {
-      number: "3",
-      title: "Watch your balance grow",
-      desc: "Accessed instantly and remain insulated from market volatility.",
-    },
-  ];
-
   return (
     <section className="bg-[#0B3A4D] py-28">
       <div className="max-w-6xl mx-auto px-6">

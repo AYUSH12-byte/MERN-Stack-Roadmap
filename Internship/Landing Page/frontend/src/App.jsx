@@ -1,26 +1,30 @@
-import React from 'react'
-import './App.css'
-import Navbar from './pages/navbar'
-import Hero from './pages/hero/Hero'
-import Features from './pages/Feature/Features'
-import Preference from './pages/preference/Preference'
-import Steps from './pages/Step/Steps'
-import Mission from './pages/Mission/Mission'
-import Footer from './pages/Flooter/Footer'
+import "./App.css";
+import Footer from "./components/common/Flooter/Footer";
+import Navbar from "./components/common/navbar";
+import Course from "./pages/courses/Course";
+import Landing from "./pages/landing/Landing";
+
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+
 
 
 const App = () => {
   return (
-    <div className='bg-gray-100 '>
-      <Navbar />
-      <Hero />
-      <Features />
-      <Preference />
-      <Steps/>
-      <Mission/>
-      <Footer/>
-    </div>
-  )
-}
+    <BrowserRouter>
+      <div className="bg-gray-100 min-h-screen">
+        <Navbar />
 
-export default App
+        <Routes>
+           <Route path="/" element={<Landing />} />
+           <Route path="/" element={<Course />} />
+
+        </Routes>
+
+        <Footer />
+
+      </div>
+    </BrowserRouter>
+  );
+};
+
+export default App;

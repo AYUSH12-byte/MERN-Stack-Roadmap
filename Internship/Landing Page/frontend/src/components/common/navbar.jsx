@@ -1,15 +1,12 @@
-import Button from "../components/Button";
+import Button from "../ui/Button";
 
 const Navbar = () => {
   return (
     <nav className="bg-gray-100">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="h-20 flex items-center justify-between">
-
           {/* Brand */}
-          <h1 className="text-2xl font-bold text-[#123B5D]">
-            Finpay
-          </h1>
+          <h1 className="text-2xl font-bold text-[#123B5D]">Finpay</h1>
 
           {/* Navigation */}
           <ul className="hidden md:flex items-center gap-10 text-sm font-medium text-gray-600">
@@ -47,7 +44,6 @@ const Navbar = () => {
               className="px-6 py-2 rounded-xl bg-[#39A6B2] text-white hover:bg-[#2F8D97]"
             />
           </div>
-
         </div>
       </div>
     </nav>

@@ -7,7 +7,6 @@ const CTA = () => {
     <section className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="bg-[#08384B] rounded-3xl px-14 py-16 flex flex-col lg:flex-row items-center justify-between gap-10">
-
           {/* Left */}
           <div className="max-w-xl">
             <p className="uppercase text-cyan-500 text-sm tracking-widest font-semibold">
@@ -38,7 +37,6 @@ const CTA = () => {
               <ArrowUpRight size={18} />
             </button>
           </div>
-
         </div>
       </div>
     </section>
