@@ -1,87 +1,168 @@
 import React from "react";
-import PlanCard from "./PlanCard";
+import { ArrowUpRight } from "lucide-react";
+import Card from "../../components/Card";
 
 const Mission = () => {
-  const stats = [
-    {
-      value: "24%",
-      title: "Revenue business",
-    },
-    {
-      value: "180K",
-      title: "In annual revenue",
-    },
-    {
-      value: "10+",
-      title: "Months of runway",
-    },
-  ];
 
   return (
-    <section className="py-28 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+
+    <section className="py-24 bg-white">
+
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+
 
         {/* Heading */}
+
         <div className="text-center">
-          <p className="uppercase text-cyan-500 tracking-widest text-sm font-semibold">
+
+          <p className="uppercase text-cyan-500 text-sm font-semibold tracking-widest">
             Our Mission
           </p>
 
-          <h2 className="text-5xl font-bold text-slate-900 mt-3 leading-tight">
+
+          <h2 className="text-5xl font-bold text-slate-900 mt-3">
             We've helped
             <br />
             innovative companies
           </h2>
+
 
           <p className="text-gray-500 mt-6 leading-8">
             Hundreds of all sizes and across all industries
             <br />
             have made big improvements with us.
           </p>
+
+
         </div>
+
+
 
         {/* Stats */}
-        <div className="grid grid-cols-3 gap-10 mt-20 text-center">
-          {stats.map((item, index) => (
-            <div key={index}>
-              <h3 className="text-5xl font-bold text-slate-900">
-                {item.value}
-              </h3>
 
-              <p className="text-gray-500 mt-4">
-                {item.title}
-              </p>
-            </div>
-          ))}
+        <div className="grid md:grid-cols-3 gap-10 text-center mt-20">
+
+
+          <div>
+
+            <h3 className="text-5xl font-bold">
+              24%
+            </h3>
+
+            <p className="text-gray-500 mt-4">
+              Revenue business
+            </p>
+
+          </div>
+
+
+
+          <div>
+
+            <h3 className="text-5xl font-bold">
+              180K
+            </h3>
+
+            <p className="text-gray-500 mt-4">
+              In annual revenue
+            </p>
+
+          </div>
+
+
+
+          <div>
+
+            <h3 className="text-5xl font-bold">
+              10+
+            </h3>
+
+            <p className="text-gray-500 mt-4">
+              Months of runway
+            </p>
+
+          </div>
+
+
         </div>
+
+
+
 
         {/* Plans */}
-        <div className="text-center mt-20">
-          <p className="uppercase text-sm tracking-widest font-semibold text-slate-700">
-            Choose Plan
-          </p>
-        </div>
+
+        <p className="text-center uppercase tracking-widest text-sm font-semibold mt-20">
+          Choose Plan
+        </p>
+
+
 
         <div className="grid md:grid-cols-2 gap-6 mt-8">
 
-          <PlanCard
-            title="Plus"
-            price="£2.99/month"
-            bgColor="bg-[#EEF5F7]"
-          />
 
-          <PlanCard
-            title="Premium"
-            price="£6.99/month"
-            bgColor="bg-gradient-to-br from-cyan-500 to-cyan-700"
-            textColor="text-white"
-          />
+          {/* Plus */}
+
+          <Card className="bg-[#EEF5F7] h-72 flex flex-col justify-between">
+
+            <h2 className="text-5xl font-bold">
+              Plus
+            </h2>
+
+
+            <div className="flex justify-between items-center">
+
+              <p className="text-3xl">
+                £2.99/month
+              </p>
+
+
+              <ArrowUpRight size={30}/>
+
+            </div>
+
+
+          </Card>
+
+
+
+
+          {/* Premium */}
+
+          <Card className="bg-gradient-to-br from-cyan-500 to-cyan-700 h-72 flex flex-col justify-between">
+
+
+            <h2 className="text-5xl font-bold text-white">
+              Premium
+            </h2>
+
+
+            <div className="flex justify-between items-center">
+
+              <p className="text-3xl text-white">
+                £6.99/month
+              </p>
+
+
+              <ArrowUpRight
+                size={30}
+                className="text-white"
+              />
+
+            </div>
+
+
+          </Card>
+
 
         </div>
 
+
       </div>
+
     </section>
+
   );
 };
+
 
 export default Mission;
