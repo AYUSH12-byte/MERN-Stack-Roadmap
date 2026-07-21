@@ -2,10 +2,10 @@ import React from "react";
 
 const RightBody = () => {
   return (
-    <div className="w-1/2 flex items-center justify-center bg-gray-100">
-      <div className="relative">
+    <div className="w-full md:w-1/2 flex items-center justify-center bg-gray-100 px-4 sm:px-6 py-6 md:py-0 md:order-2 order-2">
+      <div className="relative mx-auto">
         {/* Main Card */}
-        <div className="bg-white rounded-3xl shadow-xl p-6 w-80">
+        <div className="bg-white rounded-3xl shadow-xl p-4 sm:p-6 w-72 sm:w-80">
           {/* Profile */}
           <div className="flex items-center gap-3 mb-6">
             <div className="w-12 h-12 rounded-xl bg-cyan-600 flex items-center justify-center text-white font-bold">
@@ -55,7 +55,7 @@ const RightBody = () => {
         </div>
 
         {/* Floating Credit Card */}
-        <div className="absolute -top-10 right-0 w-44 h-56 rounded-2xl bg-cyan-700 text-white p-5 shadow-2xl">
+        <div className="absolute -top-6 right-2 sm:-top-10 sm:right-0 w-32 h-40 sm:w-44 sm:h-56 rounded-2xl bg-cyan-700 text-white p-4 sm:p-5 shadow-2xl">
           <p className="text-xs opacity-80">Credit Card</p>
 
           <h2 className="text-2xl font-bold mt-3">234 **** ****</h2>

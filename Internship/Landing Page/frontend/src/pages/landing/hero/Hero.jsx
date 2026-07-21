@@ -4,7 +4,7 @@ import RightBody from "./RightBody";
 
 const Hero = () => {
   return (
-    <div className="bg-gray-100 h-screen w-7xl max-w-7xl flex mx-auto ">
+    <div className="bg-gray-100 min-h-screen w-full max-w-7xl flex flex-col-reverse md:flex-row mx-auto py-10 md:py-0">
       <LeftBody />
       <RightBody />
     </div>

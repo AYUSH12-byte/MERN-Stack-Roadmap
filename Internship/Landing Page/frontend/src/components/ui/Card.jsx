@@ -4,8 +4,8 @@ const Card = ({ children, className = "" }) => {
   return (
     <div
       className={`
-        rounded-3xl 
-        p-8 
+        rounded-2xl sm:rounded-3xl
+        p-6 sm:p-8
         ${className}
       `}
     >

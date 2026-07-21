@@ -21,24 +21,24 @@ const Features = () => {
   ];
 
   return (
-    <section className="bg-gray-100 py-24">
+    <section className="bg-gray-100 py-16 sm:py-20 lg:py-24">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Heading */}
-        <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div>
+        <div className="grid gap-8 md:grid-cols-2 md:gap-12 items-start">
+          <div className="text-center md:text-left">
             <p className="uppercase tracking-widest text-cyan-600 text-sm font-semibold">
               Future Payment
             </p>
 
-            <h1 className="text-5xl font-bold text-slate-900 mt-3 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mt-3 leading-tight">
               Experience that grows
               <br />
               with your scale.
             </h1>
           </div>
 
-          <div className="md:flex md:justify-end">
-            <p className="text-gray-500 text-lg leading-8 max-w-md">
+          <div className="md:flex md:justify-end text-center md:text-left">
+            <p className="text-gray-500 text-base sm:text-lg leading-8 max-w-md">
               Design a financial operating system that works for your business
               and streamlined cash flow management.
             </p>
@@ -46,8 +46,7 @@ const Features = () => {
         </div>
 
         {/* Cards */}
-
-        <div className="grid md:grid-cols-3 gap-8 mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12 sm:mt-16 lg:mt-20">
           {data.map((item, index) => (
             <Card key={index} className="bg-white">
               <div className="mb-6">{item.icon}</div>
