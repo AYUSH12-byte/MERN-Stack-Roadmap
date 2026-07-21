@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
-import Button from "../components/Button"; // adjust path as needed
+import Button from "../../../components/ui/Button"; // adjust path as needed
 
 const CTA = () => {
   return (
@@ -11,7 +11,7 @@ const CTA = () => {
           <div className="max-w-xl">
             <p className="uppercase text-cyan-500 text-sm tracking-widest font-semibold">
               Try It Now
-            </p>
+            </p>git
 
             <h2 className="text-5xl font-bold text-white mt-4 leading-tight">
               Ready to level up your

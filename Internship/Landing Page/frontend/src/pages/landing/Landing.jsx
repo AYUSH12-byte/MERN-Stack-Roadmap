@@ -4,6 +4,7 @@ import Features from './Feature/Features'
 import Preference from './preference/Preference'
 import Mission from './Mission/Mission'
 import Steps from './Step/Steps'
+import CTA from './CTA/CTA'
 // import Hero from '../hero/Hero'
 // import Features from '../Feature/Features'
 // import Preference from '../preference/Preference'
@@ -18,6 +19,7 @@ const Landing = () => {
           <Preference />
           <Steps />
           <Mission />
+          <CTA/>
       
     </div>
   )
