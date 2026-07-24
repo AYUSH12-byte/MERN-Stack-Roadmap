@@ -81,7 +81,7 @@ export default function ProductList() {
               onClick={() => setSelectedProduct(product)}
               className="mt-auto w-full bg-blue-500 hover:bg-blue-600 text-white py-2 rounded mt-5 transition"
             >
-              View Detail
+              View Details
             </button>
           </div>
         ))}

@@ -6,15 +6,8 @@ const Product = ({ selectedProduct, setSelectedProduct }) => {
   return (
     <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50 p-4">
       <div className="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-lg p-4 sm:p-6 relative">
-        {/* Close Button */}
-        <button
-          onClick={() => setSelectedProduct(null)}
-          className="absolute top-4 right-4 text-2xl font-bold hover:text-red-500"
-        >
-          ✕
-        </button>
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+         
           {/* Product Image */}
           <div className="flex justify-center items-center">
             <img
@@ -40,19 +33,22 @@ const Product = ({ selectedProduct, setSelectedProduct }) => {
 
             <div className="space-y-2 text-sm sm:text-base">
               <p>
-                <strong>Brand:</strong> {selectedProduct.brand}
+                {" "}
+                <strong>Brand:</strong> {selectedProduct.brand}{" "}
               </p>
 
               <p>
-                <strong>Category:</strong> {selectedProduct.category}
+                <strong>Category:</strong> {selectedProduct.category}{" "}
               </p>
 
               <p>
-                <strong>Rating:</strong> ⭐ {selectedProduct.rating}
+                {" "}
+                <strong>Rating:</strong> ⭐ {selectedProduct.rating}{" "}
               </p>
 
               <p>
-                <strong>Stock:</strong> {selectedProduct.stock}
+                {" "}
+                <strong>Stock:</strong> {selectedProduct.stock}{" "}
               </p>
 
               <p>
@@ -61,11 +57,14 @@ const Product = ({ selectedProduct, setSelectedProduct }) => {
               </p>
 
               <p>
-                <strong>Discount:</strong> {selectedProduct.discountPercentage}%
+                {" "}
+                <strong>Discount:</strong> {selectedProduct.discountPercentage}
+                %{" "}
               </p>
 
               <p>
-                <strong>Weight:</strong> {selectedProduct.weight} kg
+                {" "}
+                <strong>Weight:</strong> {selectedProduct.weight} kg{" "}
               </p>
 
               <p>
@@ -75,15 +74,21 @@ const Product = ({ selectedProduct, setSelectedProduct }) => {
               </p>
 
               <p>
-                <strong>Warranty:</strong> {selectedProduct.warrantyInformation}
+                {" "}
+                <strong>Warranty:</strong>{" "}
+                {selectedProduct.warrantyInformation}{" "}
               </p>
 
               <p>
-                <strong>Shipping:</strong> {selectedProduct.shippingInformation}
+                {" "}
+                <strong>Shipping:</strong>{" "}
+                {selectedProduct.shippingInformation}{" "}
               </p>
 
               <p>
-                <strong>Return Policy:</strong> {selectedProduct.returnPolicy}
+                {" "}
+                <strong>Return Policy:</strong>{" "}
+                {selectedProduct.returnPolicy}{" "}
               </p>
 
               <div>
