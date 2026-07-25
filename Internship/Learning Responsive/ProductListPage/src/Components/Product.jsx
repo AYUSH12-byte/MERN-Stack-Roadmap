@@ -7,7 +7,14 @@ const Product = ({ selectedProduct, setSelectedProduct }) => {
     <div className="fixed inset-0 bg-black/50 flex justify-center items-center z-50 p-4">
       <div className="bg-white w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-xl shadow-lg p-4 sm:p-6 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-         
+          {/* Close Button */}
+        <button
+          onClick={() => setSelectedProduct(null)}
+          className="absolute top-4 right-4 text-2xl font-bold hover:text-red-500"
+        >
+          ✕
+        </button>
+        
           {/* Product Image */}
           <div className="flex justify-center items-center">
             <img
