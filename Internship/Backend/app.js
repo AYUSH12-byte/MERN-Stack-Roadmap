@@ -1,12 +1,17 @@
 import express from "express";
-import productRoutes from "./routes/product.routes.js";
+import userRoutes from "./routes/user.routes.js";
 
 const app = express();
 
-app.use(express.json()); // ✅ body parser
+// Middleware
+app.use(express.json());
 
-app.use("/api/products", productRoutes);
+// Routes
+app.use("/api/users", userRoutes);
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
+// Default Route
+app.get("/", (req, res) => {
+  res.send("API is running...");
 });
+
+export default app;
