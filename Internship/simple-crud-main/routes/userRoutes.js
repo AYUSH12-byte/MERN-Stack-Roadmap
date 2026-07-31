@@ -8,15 +8,18 @@ const {
   updateUser,
   deleteUser,
 } = require('../controller/userController');
+const { loginUser } = require('../controller/auth.controller');
+const verifyToken = require('../middleware/authmiddleware');
 
 // CREATE
 router.post('/', createUser);
+router.post('/login', loginUser);
 
 // READ ALL
-router.get('/', getUsers);
+router.get('/',verifyToken, getUsers);
 
 // READ ONE
-router.get('/:id', getUserById);
+router.get('/:id',verifyToken, getUserById);
 
 // UPDATE
 router.put('/:id', updateUser);
