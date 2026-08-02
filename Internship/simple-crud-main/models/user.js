@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema(
   {
@@ -6,13 +6,24 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-      //product:{
-       // type:mongoose.Schema.Types.ObjectId,
-       // ref:"Product",
-        //required:true
-      //},
+    //product:{
+    // type:mongoose.Schema.Types.ObjectId,
+    // ref:"Product",
+    //required:true
+    //},
+    image: {
+      type: [String],
+      required: true,
+    },
 
-
+    front: {
+      type: String,
+      required: true,
+    },
+    back: {
+      type: String,
+      required: true,
+    },
     email: {
       type: String,
       required: true,
@@ -25,7 +36,7 @@ const userSchema = new mongoose.Schema(
   },
   {
     timestamps: true,
-  }
+  },
 );
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model("User", userSchema);

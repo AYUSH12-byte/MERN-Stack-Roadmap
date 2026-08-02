@@ -10,18 +10,9 @@ const {
 } = require('../controller/productController');
 
 // CREATE
-router.post('/', createProduct);
-
-// READ ALL
-router.get('/', getProducts);
+router.route('/').post(createProduct). get(getProducts);
 
 // READ ONE
-router.get('/:id', getProductById);
-
-// UPDATE
-router.put('/:id', updateProduct);
-
-// DELETE
-router.delete('/:id', deleteProduct);
+router.route('/:id').get(getProductById). put(updateProduct).delete(deleteProduct);
 
 module.exports = router;

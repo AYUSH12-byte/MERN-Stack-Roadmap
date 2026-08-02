@@ -16,7 +16,8 @@
     "express": "^5.2.1",
     "json": "^11.0.0",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.8.1"
+    "mongoose": "^9.8.1",
+    "multer": "^2.2.0"
   },
   "type": "commonjs",
   "devDependencies": {
