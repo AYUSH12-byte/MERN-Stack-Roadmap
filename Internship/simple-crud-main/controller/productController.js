@@ -21,7 +21,7 @@ exports.createProduct = async (req, res) => {
 // GET ALL PRODUCTS
 exports.getProducts = async (req, res) => {
   try {
-    const products = await Product.find();
+    const products = await Product.find().populate("user");
 
     res.status(200).json({
       success: true,
@@ -39,7 +39,7 @@ exports.getProducts = async (req, res) => {
 // GET SINGLE PRODUCT
 exports.getProductById = async (req, res) => {
   try {
-    const product = await Product.findById(req.params.id);
+   const product = await Product.findById(req.params.id).populate("user");
 
     if (!product) {
       return res.status(404).json({
