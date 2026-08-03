@@ -14,19 +14,20 @@ const upload = require('../middleware/uploadmiddle');
 
 // CREATE
 // router.post('/', upload.array('image', 2), createUser); for multiple array
-//  router.post('/', upload.single('image'), createUser);  for single
 
-router.post('/', upload.fields([{name:'front'},{name:'back'}]), createUser); 
+router.post('/', upload.single('image'), createUser);
+
+// router.post('/', upload.fields([{name:'front'},{name:'back'}]), createUser); 
 
 
 // Login
 router.post('/login', loginUser);
 
 // READ ALL
-router.get('/',verifyToken, getUsers);
+router.get('/', getUsers);
 
 // READ ONE
-router.get('/:id',verifyToken, getUserById);
+router.get('/:id', getUserById);
 
 // UPDATE
 router.put('/:id', updateUser);
